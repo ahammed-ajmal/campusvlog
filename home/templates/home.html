@@ -1,0 +1,1027 @@
+{% extends "master.html" %}
+{% load static %}
+{% block content %}
+  {% comment %} background image section {% endcomment %}
+  <section class="bg-img">
+    <div class="ctn">
+      <div class="bg-img-ctn">
+        <div class="bg-img-1-ctn">
+          <div class="bg-img-1">
+            <a class="bg-img-link" href="article/{{ latest_id.0 }}">
+              <img src="{{ latest_image.0 }}" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="bg-img-2-4-ctn">
+          <div>
+            <div class="bg-img-2">
+              <a class="bg-img-link" href="article/{{ latest_id.1 }}">
+                <img src="{{ latest_image.1 }}" alt="">
+              </a>
+            </div>
+            <div class="bg-img-3">
+              <a class="bg-img-link" href="article/{{ latest_id.2 }}">
+                <img src="{{ latest_image.2 }}" alt="">
+              </a>
+            </div>
+            <div class="bg-img-4">
+              <a class="bg-img-link" href="article/{{ latest_id.3 }}">
+                <img src="{{ latest_image.3 }}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% comment %} category section {% endcomment %}
+  <section class="category-section">
+    <div class="category-section-ctn">
+      <div class="category-main-ctn">
+        <div>
+          <div class="category-nav-ctn">
+            <h3>Twenty</h3>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active"
+                        id="category-1-1-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-1-1-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-1-1-tab-pane"
+                        aria-selected="true">cat11</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="category-1-2-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-1-2-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-1-2-tab-pane"
+                        aria-selected="false">cat21</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="category-1-3-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-1-3-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-1-3-tab-pane"
+                        aria-selected="false">cat31</button>
+              </li>
+            </ul>
+            <a href="">view all</a>
+          </div>
+          <div class="category-main">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active"
+                   id="category-1-1-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-1-1-tab"
+                   tabindex="0">
+                <div class="category-itm-ctn">
+                  <div class="category-large-itm">
+                    <a class="category-img-link" href="">
+                      <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                    </a>
+                    <div>
+                      <h5>
+                        <a href="">Lorem ipsum dolor sit, amet consess</a>
+                      </h5>
+                      <span class="c-h-d">
+                        <a href="" class="c-h-d-category">Category</a>
+                        <span class="c-h-d-hyphen">-</span>
+                        <span class="c-h-d-date">00/00/0000</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="category-small-itm-ctn">
+                    <div class="category-small-itm">
+                      <a class="category-img-link"  href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade"
+                   id="category-1-2-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-1-2-tab"
+                   tabindex="0">
+                <div class="category-itm-ctn">
+                  <div class="category-large-itm">
+                    <a class="category-img-link" href="">
+                      <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                    </a>
+                    <div>
+                      <h5>
+                        <a href="">Lorem ipsum dolor sit, amet consess</a>
+                      </h5>
+                      <span class="c-h-d">
+                        <a href="" class="c-h-d-category">Category</a>
+                        <span class="c-h-d-hyphen">-</span>
+                        <span class="c-h-d-date">00/00/0000</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="category-small-itm-ctn">
+                    <div class="category-small-itm">
+                      <a class="category-img-link"  href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade"
+                   id="category-1-3-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-1-3-tab"
+                   tabindex="0">
+                <div>
+                  <div class="category-itm-ctn">
+                    <div class="category-large-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm-ctn">
+                      <div class="category-small-itm">
+                        <a class="category-img-link"  href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="category-nav-ctn">
+            <h3>Twenty</h3>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active"
+                        id="category-2-1-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-2-1-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-2-1-tab-pane"
+                        aria-selected="true">cat11</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="category-2-2-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-2-2-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-2-2-tab-pane"
+                        aria-selected="false">cat22</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="category-2-3-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-2-3-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-2-3-tab-pane"
+                        aria-selected="false">cat32</button>
+              </li>
+            </ul>
+            <a href="">view all</a>
+          </div>
+          <div class="category-main">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active"
+                   id="category-2-1-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-2-1-tab"
+                   tabindex="0">
+                <div>
+                  <div class="category-itm-ctn">
+                    <div class="category-large-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm-ctn">
+                      <div class="category-small-itm">
+                        <a class="category-img-link"  href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade"
+                   id="category-2-2-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-2-2-tab"
+                   tabindex="0">
+                <div>
+                  <div class="category-itm-ctn">
+                    <div class="category-large-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm-ctn">
+                      <div class="category-small-itm">
+                        <a class="category-img-link"  href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade"
+                   id="category-2-3-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-2-3-tab"
+                   tabindex="0">
+                <div>
+                  <div class="category-itm-ctn">
+                    <div class="category-large-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm-ctn">
+                      <div class="category-small-itm">
+                        <a class="category-img-link"  href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="category-nav-ctn">
+            <h3>Twenty</h3>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active"
+                        id="category-3-1-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-3-1-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-3-1-tab-pane"
+                        aria-selected="true">cat11</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="category-3-2-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-3-2-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-3-2-tab-pane"
+                        aria-selected="false">cat32</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"
+                        id="category-3-3-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#category-3-3-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="category-3-3-tab-pane"
+                        aria-selected="false">cat33</button>
+              </li>
+            </ul>
+            <a href="">view all</a>
+          </div>
+          <div class="category-main">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active"
+                   id="category-3-1-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-3-1-tab"
+                   tabindex="0">
+                <div>
+                  <div class="category-itm-ctn">
+                    <div class="category-large-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm-ctn">
+                      <div class="category-small-itm">
+                        <a class="category-img-link"  href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade"
+                   id="category-3-2-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-3-2-tab"
+                   tabindex="0">
+                <div>
+                  <div class="category-itm-ctn">
+                    <div class="category-large-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm-ctn">
+                      <div class="category-small-itm">
+                        <a class="category-img-link"  href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade"
+                   id="category-3-3-tab-pane"
+                   role="tabpanel"
+                   aria-labelledby="category-3-3-tab"
+                   tabindex="0">
+                <div>
+                  <div class="category-itm-ctn">
+                    <div class="category-large-itm">
+                      <a class="category-img-link" href="">
+                        <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                      </a>
+                      <div>
+                        <h5>
+                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        </h5>
+                        <span class="c-h-d">
+                          <a href="" class="c-h-d-category">Category</a>
+                          <span class="c-h-d-hyphen">-</span>
+                          <span class="c-h-d-date">00/00/0000</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="category-small-itm-ctn">
+                      <div class="category-small-itm">
+                        <a class="category-img-link"  href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="category-small-itm">
+                        <a class="category-img-link" href="">
+                          <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                        </a>
+                        <div>
+                          <h5>
+                            <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          </h5>
+                          <span class="c-h-d">
+                            <a href="" class="c-h-d-category">Category</a>
+                            <span class="c-h-d-hyphen">-</span>
+                            <span class="c-h-d-date">00/00/0000</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category-side-ctn">
+        <div>
+          <div>
+            <div class="popular-head-ctn">
+              <h3 class="popular-head">Popular Article</h3>
+            </div>
+            <ul class="popular-items">
+              <li class="popular-items-li">
+                <div>1</div>
+                <a href="">Lorem ipsum, dolm, dolor</a>
+              </li>
+              <li class="popular-items-li">
+                <div>1</div>
+                <a href="">Lorem ipsum, dolm, dolor</a>
+              </li>
+              <li class="popular-items-li">
+                <div>1</div>
+                <a href="">Lorem ipsum, dolm, dolor</a>
+              </li>
+              <li class="popular-items-li">
+                <div>1</div>
+                <a href="">Lorem ipsum, dolm, dolor</a>
+              </li>
+              <li class="popular-items-li">
+                <div>1</div>
+                <a href="">Lorem ipsum, dolm, dolor</a>
+              </li>
+            </ul>
+          </div>
+          <div class="side-ads">
+            <a href="">
+              <img class="side-ads-img" src="{% static 'img/A.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="side-social-ctn">
+            <div class="side-social-head">
+              <h3>Social</h3>
+            </div>
+            <ul class="side-social-ul">
+              <li class="side-social-li">
+                <a href="">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <div class="side-social-count">
+                  <span>1.4k Likes</span>
+                  <a href="">LIKE</a>
+                </div>
+              </li>
+              <li class="side-social-li">
+                <a href="">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <div class="side-social-count">
+                  <span>1.4k Followers</span>
+                  <a href="">FollOW</a>
+                </div>
+              </li>
+              <li class="side-social-li">
+                <a href="">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <div class="side-social-count">
+                  <span>1.4k Followers</span>
+                  <a href="">FOLLOW</a>
+                </div>
+              </li>
+              <li class="side-social-li">
+                <a href="">
+                  <i class="fa-brands fa-medium"></i>
+                </a>
+                <div class="side-social-count">
+                  <span>1.4k Subscribers</span>
+                  <a href="">SUBSCRIBE</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="latest">
+    <div class="ctn">
+      <div class="latest-ctn">
+        <div class="latest-main-ctn">
+          <div class="latest-main-head">
+            <h3>Latest</h3>
+          </div>
+          <div class="latest-items-ctn">
+            <div class="latest-items">
+              <div class="latest-item-box">
+                <a href="">
+                  <img src="{{ latest_image.0 }}"  alt="">
+                </a>
+                <div>
+                  <h5>{{ latest_heading.0 }}</h5>
+                  <span class="c-h-d">
+                    <a href="" class="c-h-d-category">Category</a>
+                    <span class="c-h-d-hyphen">-</span>
+                    <span class="c-h-d-date">00/00/0000</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="latest-items">
+              <div class="latest-item-box">
+                <a href="">
+                  <img src="{{ latest_image.1 }}"  alt="">
+                </a>
+                <div>
+                  <h5>{{ latest_heading.1 }}</h5>
+                  <span class="c-h-d">
+                    <a href="" class="c-h-d-category">Category</a>
+                    <span class="c-h-d-hyphen">-</span>
+                    <span class="c-h-d-date">00/00/0000</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="latest-items">
+              <div class="latest-item-box">
+                <a href="">
+                  <img src="{{ latest_image.2 }}"  alt="">
+                </a>
+                <div>
+                  <h5>{{ latest_heading.2 }}</h5>
+                  <span class="c-h-d">
+                    <a href="" class="c-h-d-category">Category</a>
+                    <span class="c-h-d-hyphen">-</span>
+                    <span class="c-h-d-date">00/00/0000</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="latest-items">
+              <div class="latest-item-box">
+                <a href="">
+                  <img src="{{ latest_image.3 }}"  alt="">
+                </a>
+                <div>
+                  <h5>{{ latest_heading.3 }}</h5>
+                  <span class="c-h-d">
+                    <a href="" class="c-h-d-category">Category</a>
+                    <span class="c-h-d-hyphen">-</span>
+                    <span class="c-h-d-date">00/00/0000</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="latest-items">
+              <div class="latest-item-box">
+                <a href="">
+                  <img src="{{ latest_image.4 }}"  alt="">
+                </a>
+                <div>
+                  <h5>{{ latest_heading.4 }}</h5>
+                  <span class="c-h-d">
+                    <a href="" class="c-h-d-category">Category</a>
+                    <span class="c-h-d-hyphen">-</span>
+                    <span class="c-h-d-date">00/00/0000</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="latest-items">
+              <div class="latest-item-box">
+                <a href="">
+                  <img src="{{ latest_image.5 }}"  alt="">
+                </a>
+                <div>
+                  <h5>{{ latest_heading.5 }}</h5>
+                  <span class="c-h-d">
+                    <a href="" class="c-h-d-category">Category</a>
+                    <span class="c-h-d-hyphen">-</span>
+                    <span class="c-h-d-date">00/00/0000</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="latest-items">
+              <div class="latest-item-box">
+                <a href="">
+                  <img src="{{ latest_image.6 }}"  alt="">
+                </a>
+                <div>
+                  <h5>{{ latest_heading.6 }}</h5>
+                  <span class="c-h-d">
+                    <a href="" class="c-h-d-category">Category</a>
+                    <span class="c-h-d-hyphen">-</span>
+                    <span class="c-h-d-date">00/00/0000</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="latest-items">
+              <div class="latest-item-box">
+                <a href="">
+                  <img src="{{ latest_image.7 }}"  alt="">
+                </a>
+                <div>
+                  <h5>{{ latest_heading.7 }}</h5>
+                  <span class="c-h-d">
+                    <a href="" class="c-h-d-category">Category</a>
+                    <span class="c-h-d-hyphen">-</span>
+                    <span class="c-h-d-date">00/00/0000</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="latest-side-ctn"></div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
