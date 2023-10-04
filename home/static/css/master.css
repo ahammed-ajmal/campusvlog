@@ -196,6 +196,7 @@ a {
 }
 
 .nav-sub-menu {
+  display: flex;  /*change to none*/
   flex-wrap: wrap;
   position: absolute;
   top: 100%;
@@ -218,39 +219,82 @@ a {
   list-style: none;
 }
 
+.nav-sub-item {
+  display: block;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #222;
+  border-radius: 0;
+  padding: 8px 20px 8px 33px;
+}
+
 .nav-sub-contents {
   width: calc(100% - 240px);
+}
+
+.nav-sub-content-item {
+  padding: 25px 50px 35px 30px;
+  
+}
+
+.n-s-content-item-ctn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.n-s-content-item-box {
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+.n-s-content-item-img-link {
+  display: block;
+}
+
+.n-s-content-item-img-link > img {
+  width: 100%;
+  vertical-align: middle;
+    border-style: none;
+}
+
+/* navigation show/hide styling */
+
+.nav-hidden {
+  display: none;
 }
 
 /* /////////////////////////////////// */
 
 .nav-hide-1 {
   position: absolute;
-  top: 179px;
   display: none;
 }
 .nav-hide-2 {
   position: absolute;
-  top: 179px;
-  left: 222px;
   display: none;
 }
 .nav-hide-3 {
   position: absolute;
   top: 179px;
-  left: 320px;
   display: none;
 }
 .nav-hide-4 {
   position: absolute;
   top: 179px;
-  left: 432px;
   display: none;
 }
 .nav-hide-5 {
   position: absolute;
   top: 179px;
-  left: 534px;
   display: none;
 }
 
