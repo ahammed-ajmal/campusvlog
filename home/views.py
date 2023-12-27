@@ -18,6 +18,9 @@ def heading_latest(request):
      random_image = [images[i] for i in random_indices]
      random_category = [categories[i] for i in random_indices]
 
+     # category for main page
+     category_history = writing.objects.filter(category="History")
+
 
      template = loader.get_template('home.html')
      context = {
@@ -25,6 +28,7 @@ def heading_latest(request):
           'latest_image': latest_image,
           'latest_id': latest_id,
           'random_heading': random_heading,
+          'category_history': category_history,
      }
      return HttpResponse(template.render(context, request))
 
