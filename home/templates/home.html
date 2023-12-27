@@ -104,17 +104,17 @@
                   </div>
                   <div class="category-small-itm-ctn">
                     <div class="category-small-itm">
-                      <a class="category-img-link"  href="">
-                        <img src="{% static 'img/post-50.jpg.webp' %}"  alt="">
+                      <a class="category-img-link"  href="article/{{ history_id.1 }}">
+                        <img src="{{ history_image.1 }}"  alt="">
                       </a>
                       <div>
                         <h5>
-                          <a href="">Lorem ipsum dolor sit, amet consess</a>
+                          <a href="article/{{ history_id.1 }}">{{ history_heading.1 }}</a>
                         </h5>
                         <span class="c-h-d">
-                          <a href="" class="c-h-d-category">Category</a>
+                          <a href="" class="c-h-d-category">{{ history_sub_category.1 }}</a>
                           <span class="c-h-d-hyphen">-</span>
-                          <span class="c-h-d-date">00/00/0000</span>
+                          <span class="c-h-d-date">{{ history_publishing_date.1 }}</span>
                         </span>
                       </div>
                     </div>

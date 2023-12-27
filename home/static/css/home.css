@@ -419,11 +419,11 @@ Category section Navigation
 }
 
 .category-large-itm h5 > a {
-  font-family: "Roboto", sans-serif-Regular;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.25;
-  color: #222;
+  font-family: rachana;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 0.1;
+  color: #695f5f;
 }
 
 .category-small-itm-ctn {
