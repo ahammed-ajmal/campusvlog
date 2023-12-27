@@ -9,6 +9,7 @@
           <div class="bg-img-1">
             <a class="bg-img-link" href="article/{{ latest_id.0 }}">
               <img src="{{ latest_image.0 }}" alt="">
+              <h2 class="latest-heading">{{ latest_heading.0 }}</h2>
             </a>
           </div>
         </div>
@@ -17,16 +18,19 @@
             <div class="bg-img-2">
               <a class="bg-img-link" href="article/{{ latest_id.1 }}">
                 <img src="{{ latest_image.1 }}" alt="">
+                <h2 class="latest-heading">{{ latest_heading.1 }}</h2>
               </a>
             </div>
             <div class="bg-img-3">
               <a class="bg-img-link" href="article/{{ latest_id.2 }}">
                 <img src="{{ latest_image.2 }}" alt="">
+                <h2 class="latest-heading">{{ latest_heading.2 }}</h2>
               </a>
             </div>
             <div class="bg-img-4">
               <a class="bg-img-link" href="article/{{ latest_id.3 }}">
                 <img src="{{ latest_image.3 }}" alt="">
+                <h2 class="latest-heading">{{ latest_heading.3 }}</h2>
               </a>
             </div>
           </div>
@@ -40,7 +44,7 @@
       <div class="category-main-ctn">
         <div>
           <div class="category-nav-ctn">
-            <h3>Twenty</h3>
+            <h3>History</h3>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active"
@@ -84,17 +88,17 @@
                    tabindex="0">
                 <div class="category-itm-ctn">
                   <div class="category-large-itm">
-                    <a class="category-img-link" href="">
-                      <img src="{% static 'img/post-50.jpg.webp' %}" alt="">
+                    <a class="category-img-link" href="article/{{ history_id.0 }}">
+                      <img src="{{ history_image.0 }}" alt="">
                     </a>
                     <div>
                       <h5>
-                        <a href="">Lorem ipsum dolor sit, amet consess</a>
+                        <a href="article/{{ history_id.0 }}">{{ history_heading.0 }}</a>
                       </h5>
                       <span class="c-h-d">
-                        <a href="" class="c-h-d-category">Category</a>
+                        <a href="" class="c-h-d-category">{{ history_sub_category.0 }}</a>
                         <span class="c-h-d-hyphen">-</span>
-                        <span class="c-h-d-date">00/00/0000</span>
+                        <span class="c-h-d-date">{{ history_publishing_date.0 }}</span>
                       </span>
                     </div>
                   </div>
