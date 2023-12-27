@@ -54,6 +54,15 @@ a {
   cursor: pointer;
 }
 
+.ctn {
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
 /* --Global Styles Ends-- */
 
 /* --Top Header Styles Starts-- */
@@ -196,7 +205,7 @@ a {
 }
 
 .nav-sub-menu {
-  display: flex;  /*change to none*/
+  display: flex; /*change to none*/
   flex-wrap: wrap;
   position: absolute;
   top: 100%;
@@ -235,7 +244,6 @@ a {
 
 .nav-sub-content-item {
   padding: 25px 50px 35px 30px;
-  
 }
 
 .n-s-content-item-ctn {
@@ -253,7 +261,6 @@ a {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-
 }
 
 .n-s-content-item-img-link {
@@ -263,7 +270,7 @@ a {
 .n-s-content-item-img-link > img {
   width: 100%;
   vertical-align: middle;
-    border-style: none;
+  border-style: none;
 }
 
 /* navigation show/hide styling */
@@ -344,6 +351,7 @@ a {
 .footer-top {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   font-family: Cambria, Cochin, Georgia, Timess, "Times New Roman", serif;
   font-size: 14px;

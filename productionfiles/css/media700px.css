@@ -1,0 +1,41 @@
+@media (min-width: 576px) {
+  .ctn {
+    max-width: 540px;
+  }
+  .bg-img-3,
+  .bg-img-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ctn {
+    max-width: 720px;
+  }
+  .bg-img-1-ctn {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .bg-img-2-4-ctn {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .ctn {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ctn {
+    max-width: 1140px;
+  }
+}
+
+.ctn {
+  max-width: 1080px;
+}

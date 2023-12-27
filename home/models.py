@@ -57,6 +57,7 @@ class writing(models.Model):
   sub_category = models.CharField(default='', max_length=25, choices=sub_categories)
   language = models.CharField(max_length=2, choices=languages)
   publishing_date = models.DateField()
+  address = models.TextField()
 
   def __str__(self):
     return f"{self.writer_id} {self.publishing_date}"
