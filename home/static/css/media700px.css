@@ -49,4 +49,10 @@
   .single_writing_main_ctn {
     min-width: 400px;
   }
+  .category-section-ctn {
+    flex-direction: column;
+  }
+  .category-itm-ctn{
+    flex-direction: column;
+  }
 }
