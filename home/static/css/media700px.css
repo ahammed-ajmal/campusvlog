@@ -52,7 +52,22 @@
   .category-section-ctn {
     flex-direction: column;
   }
-  .category-itm-ctn{
+  .category-itm-ctn {
     flex-direction: column;
+  }
+  .category-large-itm {
+    max-width: 100%;
+  }
+  .category-small-itm {
+    flex-direction: column;
+  }
+  .category-small-itm > a {
+    width: 100%;
+  }
+  .category-small-itm-ctn {
+    max-width: 100%;
+  }
+  .category-main-ctn {
+    max-width: 100%;
   }
 }
