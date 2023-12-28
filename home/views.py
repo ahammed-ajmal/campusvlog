@@ -19,11 +19,11 @@ def heading_latest(request):
      random_category = [categories[i] for i in random_indices]
 
      # category for main page
-     history_id = writing.objects.filter(category="History").values_list('id', flat=True)
-     history_heading = writing.objects.filter(category="History").values_list('heading', flat=True)
-     history_image = writing.objects.filter(category="History").values_list('image', flat=True)
-     history_sub_category = writing.objects.filter(category="History").values_list('sub_category', flat=True)
-     history_publishing_date = writing.objects.filter(category="History").values_list('publishing_date', flat=True)
+     history_id = writing.objects.filter(category="History").order_by('-id').values_list('id', flat=True)
+     history_heading = writing.objects.filter(category="History").order_by('-id').values_list('heading', flat=True)
+     history_image = writing.objects.filter(category="History").order_by('-id').values_list('image', flat=True)
+     history_sub_category = writing.objects.filter(category="History").order_by('-id').values_list('sub_category', flat=True)
+     history_publishing_date = writing.objects.filter(category="History").order_by('-id').values_list('publishing_date', flat=True)
 
 
      template = loader.get_template('home.html')

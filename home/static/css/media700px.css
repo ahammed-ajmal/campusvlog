@@ -39,3 +39,10 @@
 .ctn {
   max-width: 1080px;
 }
+
+/* ------------------------------------------ */
+@media (max-width: 992px) {
+  .section-nav-bar {
+    display: none;
+  }
+}
