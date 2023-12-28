@@ -214,6 +214,7 @@ a {
   width: 100%;
   border: 1px solid #f2f2f2;
   box-shadow: 0 5px 9px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
 }
 
 .nav-sub-items {
