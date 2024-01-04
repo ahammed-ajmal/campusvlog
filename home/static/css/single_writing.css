@@ -81,12 +81,13 @@ section.single_writing {
 }
 
 .single_writing_content_ctn > p {
-  font-family: rachana;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #666;
-  padding-bottom: 25px;
-  text-align: justify;
+  font-family: "Noto Sans Malayalam", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
 }
 
 .share_to_social {
