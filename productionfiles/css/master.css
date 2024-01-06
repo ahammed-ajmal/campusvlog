@@ -53,6 +53,11 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+img {
+  border-radius: 5px;
+  vertical-align: middle;
+  border-style: none;
+}
 
 .ctn {
   max-width: 1080px;

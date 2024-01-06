@@ -39,7 +39,7 @@ section.single_writing {
 }
 
 .single_writing_content_ctn > h3 {
-  font-family: rachana;
+  font-family: "Noto Sans Malayalam", sans-serif;
   font-size: 30px;
   line-height: 1.3;
   color: #222;
@@ -84,7 +84,7 @@ section.single_writing {
   font-family: "Noto Sans Malayalam", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 36px;
   margin-top: 0px;
   margin-bottom: 1rem;
   word-wrap: break-word;

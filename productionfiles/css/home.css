@@ -26,11 +26,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
 /* main heading --- latest heading */
 .latest-heading {
   color: #fbfbfb;
@@ -39,7 +34,7 @@ img {
   z-index: 99;
   bottom: 10px;
   margin: 10px;
-  font-family: rachana;
+  font-family: "Noto Sans Malayalam", sans-serif;
   font-weight: 600;
   text-shadow: 3px 7px 20px black;
 }
@@ -410,11 +405,11 @@ Category section Navigation
 }
 
 .category-large-itm h5 > a {
-  font-family: rachana;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 0.1;
-  color: #695f5f;
+  font-family: "Noto Sans Malayalam", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #303030;
 }
 
 .category-small-itm-ctn {
@@ -444,11 +439,11 @@ Category section Navigation
 }
 
 .category-small-itm h5 > a {
-  font-family: "Roboto", sans-serif-Medium;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.333333;
-  color: #333;
+  font-family: "Noto Sans Malayalam", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1;
+  color: #303030;
 }
 
 .category-itm-ctn img {
