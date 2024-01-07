@@ -429,6 +429,9 @@ Category section Navigation
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+.category-small-itm h5 {
+  padding-bottom: 5px;
+}
 
 .category-small-itm > a {
   width: 100px;
@@ -442,7 +445,7 @@ Category section Navigation
   font-family: "Noto Sans Malayalam", sans-serif;
   font-weight: 400;
   font-size: 13px;
-  line-height: 1;
+  line-height: 24px;
   color: #303030;
 }
 
@@ -621,13 +624,12 @@ section.latest {
 }
 
 .latest-items {
-  padding-right: 25px;
+  padding: 0px 15px;
   flex: 0 0 50%;
   max-width: 50%;
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
 }
 
 .latest-item-box {
@@ -648,6 +650,7 @@ section.latest {
 
 .latest-item-box h5 {
   padding-bottom: 5px;
+  font-family: "Noto Sans Malayalam", sans-serif;
 }
 
 .latest-side-ctn {

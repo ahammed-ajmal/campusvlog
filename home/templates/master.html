@@ -36,7 +36,8 @@
   {% comment %} font {% endcomment %}
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Rachana:wght@400;700&display=swap">
-        <link rel="stylesheet" href="{% static 'fonts/NotoSansMalayalam-VariableFont_wdth,wght.ttf' %}">
+  <link rel="stylesheet"
+        href="{% static 'fonts/NotoSansMalayalam-VariableFont_wdth,wght.ttf' %}">
 </head>
 <body>
   <header class="section-top-head">
@@ -67,7 +68,7 @@
         <ul class="nav-main-menu-ul">
           <li class="main-menu-item">
             <a href="" class="nav-trigger-1">HOME</a>
-            <div class="nav-sub-menu nav-hide-1">
+            {% comment %} <div class="nav-sub-menu nav-hide-1">
               <div class="nav-sub-items">
                 <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-ONE-ONE</a>
                 <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-ONE-TWO</a>
@@ -125,8 +126,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden  nav-content"
-                     id="cat-1-2-content">
+                <div class="nav-sub-content-item nav-hidden  nav-content" id="cat-1-2-content">
                   222222222222222222222222222222
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -175,8 +175,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-3-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-3-content">
                   333333333333333333333333333333
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -225,8 +224,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-4-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-4-content">
                   444444444444444444444444444444
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -275,8 +273,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-5-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-5-content">
                   555555555555555555555555555555
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -326,7 +323,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> {% endcomment %}
           </li>
           <li class="main-menu-item">
             <a href="" class="nav-trigger-2">Bussines</a>
