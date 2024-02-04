@@ -1,25 +1,29 @@
 {% extends "master.html" %}
 {% load static %}
 {% block content %}
-  <section class="single_writing">
-    <div class="ctn">
-      <div class="single_writing_ctn">
-        <div class="single_writing_main_ctn">
-          <div class="single_writing_main">
-            <div class="single_writing_content_ctn">
-              <a href="">category</a>
+<section class="single_writing">
+  <div class="ctn">
+    <div class="single_writing_ctn">
+      <div class="single_writing_main_ctn">
+        <div class="single_writing_main">
+          <div class="single_writing_content_ctn">
+
+            <div class="single_writing_img">
+              <img src="{{ single_write.image.url }}" alt="">
+            </div>
+            <div>
               <h3>{{ single_write.heading }}</h3>
               <div class="single_writing_writer_date">
+                <a href="">category</a>
                 <span>
                   By
                   <a href="">Author Me</a>
                   &nbsp; &nbsp; 01-Jan-07
                 </span>
               </div>
-              <div class="single_writing_img">
-                <img src="{{ single_write.image.url }}" alt="">
+              <div>
+                {{ single_write.body| safe }}
               </div>
-              <p>{{ single_write.body| safe }}</p>
               <div class="share_to_social">
                 <span>Share:</span>
                 <div class="share_social_button">
@@ -43,15 +47,17 @@
                     <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
                     telegram
                   </a>
-                  
+
                 </div>
               </div>
+
             </div>
-            <div class="single_writing_comment_ctn"></div>
+
           </div>
+          <div class="single_writing_comment_ctn"></div>
         </div>
-        <div class="single_writing_side_ctn"></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {% endblock content %}

@@ -1,45 +1,35 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore a diverse tapestry of campus perspectives at [Your Website Name], where students share insightful articles, opinion pieces, news stories, essays, and historical narratives in Malayalam, English, Arabic, and Urdu. Immerse yourself in a multilingual journey through the vibrant narratives of our campus community, offering a rich blend of cultural perspectives and thought-provoking content.">
-  <title>The Campus Jouornal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-        crossorigin="anonymous" />
-  <!-- Our project just needs Font Awesome Free's Solid and Brand files -->
-  <link href="{% static 'fontawesomefree/css/fontawesome.css' %}"
-        rel="stylesheet"
-        type="text/css">
-  <link href="{% static 'fontawesomefree/css/brands.css' %}"
-        rel="stylesheet"
-        type="text/css">
-  <link href="{% static 'fontawesomefree/css/solid.css' %}"
-        rel="stylesheet"
-        type="text/css">
-  <!-- Our project just needs Font Awesome Free's Solid and Brand files -->
-  <script src="{% static 'fontawesomefree/js/fontawesome.js' %}"></script>
-  <script src="{% static 'fontawesomefree/js/solid.js' %}"></script>
-  <script src="{% static 'fontawesomefree/js/brands.js' %}"></script>
-  <!-- One file includes all the Font Awesome Free icons and utilities -->
-  <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
-  <!-- One file includes all the Font Awesome Free icons and utilities -->
-  <link href="{% static 'fontawesomefree/css/all.min.css' %}"
-        rel="stylesheet"
-        type="text/css">
-  <link rel="stylesheet" href="{% static 'css/master.css' %}" />
-  <link rel="stylesheet" href="{% static 'css/home.css' %}" />
-  <link rel="stylesheet" href="{% static 'css/media.css' %}" />
-  <link rel="stylesheet" href="{% static 'css/single_writing.css' %}" />
-  <link rel="stylesheet" href="{% static 'css/media700px.css' %}" />
-  {% comment %} font {% endcomment %}
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Rachana:wght@400;700&display=swap">
-  <link rel="stylesheet"
-        href="{% static 'fonts/NotoSansMalayalam-VariableFont_wdth,wght.ttf' %}">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+  content="Explore a diverse tapestry of campus perspectives at [Your Website Name], where students share insightful articles, opinion pieces, news stories, essays, and historical narratives in Malayalam, English, Arabic, and Urdu. Immerse yourself in a multilingual journey through the vibrant narratives of our campus community, offering a rich blend of cultural perspectives and thought-provoking content.">
+<title>The Campus Jouornal</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+<!-- Our project just needs Font Awesome Free's Solid and Brand files -->
+<link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+<!-- Our project just needs Font Awesome Free's Solid and Brand files -->
+<script src="{% static 'fontawesomefree/js/fontawesome.js' %}"></script>
+<script src="{% static 'fontawesomefree/js/solid.js' %}"></script>
+<script src="{% static 'fontawesomefree/js/brands.js' %}"></script>
+<!-- One file includes all the Font Awesome Free icons and utilities -->
+<script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+<!-- One file includes all the Font Awesome Free icons and utilities -->
+<link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{% static 'css/master.css' %}" />
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+<link rel="stylesheet" href="{% static 'css/media.css' %}" />
+<link rel="stylesheet" href="{% static 'css/single_writing.css' %}" />
+<link rel="stylesheet" href="{% static 'css/media700px.css' %}" />
+{% comment %} fonts and icons {% endcomment %}
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<link rel="stylesheet" href="{% static 'fonts/NotoSansMalayalam-VariableFont_wdth,wght.ttf' %}">
 </head>
+
 <body>
   <header class="section-top-head">
     <div class="top-head">
@@ -55,7 +45,7 @@
     <div class="container-main-head">
       <div class="main-head">
         <h1>
-          CAMPUS <span>BLOG</span>
+          THE CAMPUS <span>JOURNAL</span>
         </h1>
       </div>
     </div>
@@ -63,23 +53,75 @@
   <section class="section-nav-bar">
     <div>
       <nav>
-        <a href="" class="nav-logo">
-          <img src="" alt="">
-        </a>
+        
         <ul class="nav-main-menu-ul">
           <li class="main-menu-item">
-            <a href="" class="nav-trigger-1">HOME</a>
-            {% comment %} <div class="nav-sub-menu nav-hide-1">
+            <a href="" >Home</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="" class="nav-trigger-2">Article<span class="material-symbols-outlined">
+                arrow_drop_down
+              </span></a>
+            <div class="nav-sub-menu nav-hide-2">
               <div class="nav-sub-items">
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-ONE-ONE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-ONE-TWO</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">CAT-ONE-THREE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">CAT-ONE-FOUR</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">CAT-ONE-FIVE</a>
+                <a href="" class="nav-sub-item nav-trigger" >Reliogion</a>
+                <a href="" class="nav-sub-item nav-trigger" >Culture</a>
+                <a href="" class="nav-sub-item nav-trigger" >Soceity</a>
+                <a href="" class="nav-sub-item nav-trigger" >Gender Studies</a>
+                <a href="" class="nav-sub-item nav-trigger" >Politics</a>
               </div>
               <div class="nav-sub-contents">
                 <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
-                  11111111111111111111111111111111
+
+                  <div class="n-s-content-item-ctn">
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Bussines ONEBussines ONEBussines ONE</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-2-content">
+                  222222222222222222222222222222
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
                       <div>
@@ -96,6 +138,218 @@
                       <div>
                         <a href="" class="n-s-content-item-img-link">
                           <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-3-content">
+                  333333333333333333333333333333
+                  <div class="n-s-content-item-ctn">
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-4-content">
+                  444444444444444444444444444444
+                  <div class="n-s-content-item-ctn">
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-5-content">
+                  555555555555555555555555555555
+                  <div class="n-s-content-item-ctn">
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="" alt="jj">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="main-menu-item">
+            <a href="" class="nav-trigger-3">Review<span class="material-symbols-outlined">
+              arrow_drop_down
+            </span></a>
+            <div class="nav-sub-menu nav-hide-3">
+              <div class="nav-sub-items">
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">Book</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">Documentry</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">Movie</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link"></a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link"></a>
+              </div>
+              <div class="nav-sub-contents">
+                <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
+                  qqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+                  <div class="n-s-content-item-ctn">
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="{% static 'img/post-50.jpg.webp' %}" alt="1221212j">
+                        </a>
+                        <div>
+                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
+                          <span>hiiiiiiiii</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-s-content-item-box">
+                      <div>
+                        <a href="" class="n-s-content-item-img-link">
+                          <img src="{% static 'img/post-50.jpg.webp' %}" alt="jj">
                         </a>
                         <div>
                           <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
@@ -324,543 +578,19 @@
                   </div>
                 </div>
               </div>
-            </div> {% endcomment %}
-          </li>
-          <li class="main-menu-item">
-            <a href="" class="nav-trigger-2">Bussines</a>
-            <div class="nav-sub-menu nav-hide-2">
-              <div class="nav-sub-items">
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-TWO-ONE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-TWO-TWO</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">CAT-TWO-THREE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">CAT-TWO-FOUR</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">CAT-TWO-FIVE</a>
-              </div>
-              <div class="nav-sub-contents">
-                <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
-                  11111111111111111111111111111111
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-2-content">
-                  222222222222222222222222222222
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-3-content">
-                  333333333333333333333333333333
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-4-content">
-                  444444444444444444444444444444
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-5-content">
-                  555555555555555555555555555555
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </li>
           <li class="main-menu-item">
-            <a href="" class="nav-trigger-3">India</a>
-            <div class="nav-sub-menu nav-hide-3">
-              <div class="nav-sub-items">
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-ONE-ONE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-ONE-TWO</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">CAT-ONE-THREE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">CAT-ONE-FOUR</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">CAT-ONE-FIVE</a>
-              </div>
-              <div class="nav-sub-contents">
-                <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
-                  qqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="{% static 'img/post-50.jpg.webp' %}" alt="1221212j">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="{% static 'img/post-50.jpg.webp' %}" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden  nav-content"
-                     id="cat-1-2-content">
-                  222222222222222222222222222222
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-3-content">
-                  333333333333333333333333333333
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-4-content">
-                  444444444444444444444444444444
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-5-content">
-                  555555555555555555555555555555
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="main-menu-item">
-            <a href="" class="nav-trigger-4">Politics</a>
+            <a href="" class="nav-trigger-4">Islamic<br>Studies<span class="material-symbols-outlined">
+              arrow_drop_down
+            </span></a>
             <div class="nav-sub-menu nav-hide-4">
               <div class="nav-sub-items">
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-TWO-ONE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-TWO-TWO</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">CAT-TWO-THREE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">CAT-TWO-FOUR</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">CAT-TWO-FIVE</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">History</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">Theology </a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">Literature</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">Contemporary Issues</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">Philosophy</a>
               </div>
               <div class="nav-sub-contents">
                 <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
@@ -912,8 +642,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-2-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-2-content">
                   222222222222222222222222222222
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -962,8 +691,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-3-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-3-content">
                   333333333333333333333333333333
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -1012,8 +740,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-4-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-4-content">
                   444444444444444444444444444444
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -1062,8 +789,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-5-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-5-content">
                   555555555555555555555555555555
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -1116,14 +842,16 @@
             </div>
           </li>
           <li class="main-menu-item">
-            <a href="" class="nav-trigger-5">World</a>
-            <div class="nav-sub-menu nav-hide-5">
+            <a href="" class="nav-trigger-5">Series<span class="material-symbols-outlined">
+              arrow_drop_down
+            </span></a>
+            <div class="nav-sub-menu nav-hide-4">
               <div class="nav-sub-items">
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-TWO-ONE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-TWO-TWO</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">CAT-TWO-THREE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">CAT-TWO-FOUR</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">CAT-TWO-FIVE</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">History</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">Theology </a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">Literature</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">Contemporary Issues</a>
+                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">Philosophy</a>
               </div>
               <div class="nav-sub-contents">
                 <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
@@ -1175,8 +903,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-2-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-2-content">
                   222222222222222222222222222222
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -1225,8 +952,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-3-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-3-content">
                   333333333333333333333333333333
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -1275,8 +1001,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-4-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-4-content">
                   444444444444444444444444444444
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -1325,8 +1050,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-5-content">
+                <div class="nav-sub-content-item nav-hidden nav-content" id="cat-1-5-content">
                   555555555555555555555555555555
                   <div class="n-s-content-item-ctn">
                     <div class="n-s-content-item-box">
@@ -1379,793 +1103,10 @@
             </div>
           </li>
           <li class="main-menu-item">
-            <a href="" class="nav-trigger-6">History</a>
-            <div class="nav-sub-menu nav-hide-6">
-              <div class="nav-sub-items">
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-ONE-ONE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-ONE-TWO</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">CAT-ONE-THREE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">CAT-ONE-FOUR</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">CAT-ONE-FIVE</a>
-              </div>
-              <div class="nav-sub-contents">
-                <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
-                  11111111111111111111111111111111
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden  nav-content"
-                     id="cat-1-2-content">
-                  222222222222222222222222222222
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-3-content">
-                  333333333333333333333333333333
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-4-content">
-                  444444444444444444444444444444
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-5-content">
-                  555555555555555555555555555555
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
+            <a href="" >Publiaction</a>
+       
           <li class="main-menu-item">
-            <a href="" class="nav-trigger-7">Economy</a>
-            <div class="nav-sub-menu nav-hide-7">
-              <div class="nav-sub-items">
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-TWO-ONE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-TWO-TWO</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">CAT-TWO-THREE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">CAT-TWO-FOUR</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">CAT-TWO-FIVE</a>
-              </div>
-              <div class="nav-sub-contents">
-                <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
-                  11111111111111111111111111111111
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-2-content">
-                  222222222222222222222222222222
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-3-content">
-                  333333333333333333333333333333
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-4-content">
-                  444444444444444444444444444444
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-5-content">
-                  555555555555555555555555555555
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="main-menu-item">
-            <a href="" class="nav-trigger-8">Sports</a>
-            <div class="nav-sub-menu nav-hide-8">
-              <div class="nav-sub-items">
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-1-link">CAT-TWO-ONE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-2-link">CAT-TWO-TWO</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-3-link">CAT-TWO-THREE</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-4-link">CAT-TWO-FOUR</a>
-                <a href="" class="nav-sub-item nav-trigger" id="cat-1-5-link">CAT-TWO-FIVE</a>
-              </div>
-              <div class="nav-sub-contents">
-                <div class="nav-sub-content-item  nav-content" id="cat-1-1-content">
-                  11111111111111111111111111111111
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-2-content">
-                  222222222222222222222222222222
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-3-content">
-                  333333333333333333333333333333
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-4-content">
-                  444444444444444444444444444444
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="nav-sub-content-item nav-hidden nav-content"
-                     id="cat-1-5-content">
-                  555555555555555555555555555555
-                  <div class="n-s-content-item-ctn">
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="n-s-content-item-box">
-                      <div>
-                        <a href="" class="n-s-content-item-img-link">
-                          <img src="" alt="jj">
-                        </a>
-                        <div>
-                          <h5>Lorem, ipsum Lorem, ipsum Lorem, ipsum Lorem, ipsum</h5>
-                          <span>hiiiiiiiii</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <a href="" >About us</a>
           </li>
         </ul>
       </nav>
@@ -2180,7 +1121,7 @@
   {% endblock content %}
   <section class="footer">
     <div class="footer-container">
-      <div class="footer-top">
+      {% comment %} <div class="footer-top">
         <div class="footer-head">
           <h1>
             CAMPUS<span>BLOG</span>
@@ -2242,7 +1183,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> {% endcomment %}
       <div class="footer-social-links">
         <h4>follow us</h4>
         <div>
@@ -2255,41 +1196,42 @@
     </div>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-          crossorigin="anonymous"></script>
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
   <script>
-             // Function to update the displayed date and time
- function updateDateTime() {
-  var currentDate = new Date();
-  var dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
-  var timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
+    // Function to update the displayed date and time
+    function updateDateTime() {
+      var currentDate = new Date();
+      var dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
+      var timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
 
-  var formattedDate = currentDate.toLocaleDateString(undefined, dateOptions);
-  var formattedTime = currentDate.toLocaleTimeString(undefined, timeOptions);
+      var formattedDate = currentDate.toLocaleDateString(undefined, dateOptions);
+      var formattedTime = currentDate.toLocaleTimeString(undefined, timeOptions);
 
-  document.getElementById("date-time-now").innerHTML = formattedDate + " " + formattedTime;
-}
+      document.getElementById("date-time-now").innerHTML = formattedDate + " " + formattedTime;
+    }
 
-// Update the date and time immediately
-updateDateTime();
+    // Update the date and time immediately
+    updateDateTime();
 
-// Update the date and time every second (10000 milliseconds)
-setInterval(updateDateTime, 10000);
+    // Update the date and time every second (10000 milliseconds)
+    setInterval(updateDateTime, 10000);
 
-//navigation hover hide/show function
+    //navigation hover hide/show function
 
-  const nav_trigger = document.querySelectorAll('.nav-trigger');
-  const nav_content = document.querySelectorAll('.nav-content');
+    const nav_trigger = document.querySelectorAll('.nav-trigger');
+    const nav_content = document.querySelectorAll('.nav-content');
 
-  nav_trigger.forEach((trigger, index) =>{
-    trigger.addEventListener('mouseenter', () =>{
-      nav_content.forEach((content) =>{
-        content.classList.add('nav-hidden');
+    nav_trigger.forEach((trigger, index) => {
+      trigger.addEventListener('mouseenter', () => {
+        nav_content.forEach((content) => {
+          content.classList.add('nav-hidden');
+        });
+        nav_content[index].classList.remove('nav-hidden');
       });
-      nav_content[index].classList.remove('nav-hidden');
     });
-  });
 
   </script>
 </body>
+
 </html>
