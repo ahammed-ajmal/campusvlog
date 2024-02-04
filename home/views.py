@@ -26,16 +26,35 @@ def heading_latest(request):
      article_religion_publishing_date = writing.objects.filter(category="Article", sub_category="Religion").order_by('-id').values_list('publishing_date', flat=True)
 
      article_culture_id = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('id', flat=True)
-     article_culture_heading = writing.objects.filter(category="Article", sub_category="Culture" ).order_by('-id').values_list('heading', flat=True)
+     article_culture_heading = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('heading', flat=True)
      article_culture_image = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('image', flat=True)
      article_culture_sub_category = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('sub_category', flat=True)
      article_culture_publishing_date = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('publishing_date', flat=True)
 
-     article_society_id = writing.objects.filter(category="Article", sub_category="society").order_by('-id').values_list('id', flat=True)
-     article_society_heading = writing.objects.filter(category="Article", sub_category="society" ).order_by('-id').values_list('heading', flat=True)
-     article_society_image = writing.objects.filter(category="Article", sub_category="society").order_by('-id').values_list('image', flat=True)
-     article_society_sub_category = writing.objects.filter(category="Article", sub_category="society").order_by('-id').values_list('sub_category', flat=True)
-     article_society_publishing_date = writing.objects.filter(category="Article", sub_category="society").order_by('-id').values_list('publishing_date', flat=True)
+     article_society_id = writing.objects.filter(category="Article", sub_category="Society").order_by('-id').values_list('id', flat=True)
+     article_society_heading = writing.objects.filter(category="Article", sub_category="Society" ).order_by('-id').values_list('heading', flat=True)
+     article_society_image = writing.objects.filter(category="Article", sub_category="Society").order_by('-id').values_list('image', flat=True)
+     article_society_sub_category = writing.objects.filter(category="Article", sub_category="Society").order_by('-id').values_list('sub_category', flat=True)
+     article_society_publishing_date = writing.objects.filter(category="Article", sub_category="Society").order_by('-id').values_list('publishing_date', flat=True)
+
+     review_book_id = writing.objects.filter(category="Review", sub_category="Book").order_by('-id').values_list('id', flat=True)
+     review_book_heading = writing.objects.filter(category="Review", sub_category="Book" ).order_by('-id').values_list('heading', flat=True)
+     review_book_image = writing.objects.filter(category="Review", sub_category="Book").order_by('-id').values_list('image', flat=True)
+     review_book_sub_category = writing.objects.filter(category="Review", sub_category="Book").order_by('-id').values_list('sub_category', flat=True)
+     review_book_publishing_date = writing.objects.filter(category="Review", sub_category="Book").order_by('-id').values_list('publishing_date', flat=True)
+
+     review_documentary_id = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-id').values_list('id', flat=True)
+     review_documentary_heading = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-id').values_list('heading', flat=True)
+     review_documentary_image = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-id').values_list('image', flat=True)
+     review_documentary_sub_category = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-id').values_list('sub_category', flat=True)
+     review_documentary_publishing_date = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-id').values_list('publishing_date', flat=True)
+
+     review_movie_id = writing.objects.filter(category="Review", sub_category="Movie").order_by('-id').values_list('id', flat=True)
+     review_movie_heading = writing.objects.filter(category="Review", sub_category="Movie" ).order_by('-id').values_list('heading', flat=True)
+     review_movie_image = writing.objects.filter(category="Review", sub_category="Movie").order_by('-id').values_list('image', flat=True)
+     review_movie_sub_category = writing.objects.filter(category="Review", sub_category="Movie").order_by('-id').values_list('sub_category', flat=True)
+     review_movie_publishing_date = writing.objects.filter(category="Review", sub_category="Movie").order_by('-id').values_list('publishing_date', flat=True)
+
 
      template = loader.get_template('home.html')
      context = {
@@ -58,6 +77,21 @@ def heading_latest(request):
           'article_society_image' : article_society_image,
           'article_society_sub_category' : article_society_sub_category,
           'article_society_publishing_date' : article_society_publishing_date,
+          'review_book_id': review_book_id,
+          'review_book_heading': review_book_heading,
+          'review_book_image' : review_book_image,
+          'review_book_sub_category' : review_book_sub_category,
+          'review_book_publishing_date' : review_book_publishing_date,
+          'review_documentary_id': review_documentary_id,
+          'review_documentary_heading': review_documentary_heading,
+          'review_documentary_image' : article_society_image,
+          'review_documentary_sub_category' : article_society_sub_category,
+          'review_documentary_publishing_date' : article_society_publishing_date,
+          'review_movie_id': review_movie_id,
+          'review_movie_heading': review_movie_heading,
+          'review_movie_image' : review_movie_image,
+          'review_movie_sub_category' : review_movie_sub_category,
+          'review_movie_publishing_date' : review_movie_publishing_date,
      }
      return HttpResponse(template.render(context, request))
 

@@ -19,6 +19,7 @@ class writing(models.Model):
   sub_categories = [
     ('Book','Book'),
     ('Culture','Culture'),
+    ('Documentary','Documentary'),
     ('Gender Studies', 'Gender Studies'),
     ('History','History'),
     ('International','International'),
