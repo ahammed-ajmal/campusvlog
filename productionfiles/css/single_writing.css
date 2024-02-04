@@ -8,8 +8,6 @@ section.single_writing {
   justify-content: center !important;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .single_writing_main_ctn {
@@ -19,27 +17,24 @@ section.single_writing {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  border-left: solid 1px #2222;
+  border-right: solid 1px #2222;
+  box-shadow: 0 2px 5px 0 rgba(0, 1, 1, 0.1);
 }
 
-.single_writing_main {
-  padding-right: 10px;
-}
-
-.single_writing_content_ctn {
-  padding-bottom: 70px;
+.single_writing_content_ctn > div {
+  padding: 0 70px 70px 70px;
 }
 
 .single_writing_content_ctn > a {
-  font-family: "Roboto", sans-serif-Regular;
+  font-family: "Manjari", sans-serif;
   font-size: 13px;
   line-height: 1.3;
   color: #222;
 }
 
-.single_writing_content_ctn > h3 {
-  font-family: "Noto Sans Malayalam", sans-serif;
+.single_writing_content_ctn > div > h3 {
+  font-family: "Manjari", sans-serif;
   font-size: 30px;
   line-height: 1.3;
   color: #222;
@@ -57,7 +52,7 @@ section.single_writing {
 }
 
 .single_writing_writer_date > span {
-  font-family: "Roboto", sans-serif-Regular;
+  font-family: "Manjari", sans-serif;
   font-size: 12px;
   line-height: 1.7;
   color: #888;
@@ -65,29 +60,33 @@ section.single_writing {
 }
 
 .single_writing_writer_date a {
-  font-family: "Roboto", sans-serif-Regular;
+  font-family: "Manjari", sans-serif;
   font-size: 12px;
   line-height: 1.7;
   color: #888;
 }
 
-.single_writing_img {
+div.single_writing_img {
   display: block;
-  padding-bottom: 30px;
+  padding: 30px 0;
+  width: 100%;
 }
 
 .single_writing_img > img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
-.single_writing_content_ctn > p {
-  font-family: "Noto Sans Malayalam", sans-serif;
-  font-weight: 400;
+.single_writing_content_ctn > div > p {
+  font-family: "Manjari", sans-serif;
+  margin: 0 0 24px 0;
+  color: #555;
+  /* font-weight: 400;
   font-size: 18px;
   line-height: 36px;
   margin-top: 0px;
   margin-bottom: 1rem;
-  word-wrap: break-word;
+  word-wrap: break-word; */
 }
 
 .share_to_social {
@@ -97,7 +96,7 @@ section.single_writing {
 }
 
 .share_to_social > span {
-  font-family: "Roboto", sans-serif-Regular;
+  font-family: "Manjari", sans-serif;
   font-size: 15px;
   line-height: 1.8;
   color: #555;
@@ -114,7 +113,7 @@ section.single_writing {
 }
 
 .share_social_button > a {
-  font-family: Roboto-Regular;
+  font-family: "Manjari", sans-serif;
   font-size: 13px;
   line-height: 1.7;
   color: #fff;
@@ -153,4 +152,10 @@ section.single_writing {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .single_writing_content_ctn > div {
+    padding: 0 70px 18px 18px;
+  }
 }

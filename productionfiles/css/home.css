@@ -3,7 +3,7 @@
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Manjari", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -34,7 +34,7 @@ a {
   z-index: 99;
   bottom: 10px;
   margin: 10px;
-  font-family: "Noto Sans Malayalam", sans-serif;
+  font-family: "Manjari", sans-serif;
   font-weight: 600;
   text-shadow: 3px 7px 20px black;
 }
@@ -190,7 +190,7 @@ Category section Navigation
 }
 
 .popular-head {
-  font-family: "Roboto", sans-serif-Medium;
+  font-family: "Manjari", sans-serif;
   font-size: 18px;
   line-height: 1.333333;
   color: #333;
@@ -213,7 +213,7 @@ Category section Navigation
   background-color: #999;
   width: 30px;
   height: 30px;
-  font-family: "Roboto", sans-serif-Medium;
+  font-family: "Manjari", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
@@ -226,7 +226,7 @@ Category section Navigation
 
 .popular-items-li > a {
   width: calc(100% - 48px);
-  font-family: "Roboto", sans-serif-Medium;
+  font-family: "Manjari", sans-serif;
   font-size: 15px;
   line-height: 1.466667;
   color: #333;
@@ -277,7 +277,7 @@ Category section Navigation
 }
 
 .side-social-head > h3 {
-  font-family: "Roboto", sans-serif-Medium;
+  font-family: "Manjari", sans-serif;
   font-size: 18px;
   line-height: 1.333333;
   color: #333;
@@ -317,7 +317,7 @@ Category section Navigation
 }
 
 .side-social-count > span {
-  font-family: "Roboto", sans-serif-Medium;
+  font-family: "Manjari", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #333;
@@ -325,7 +325,7 @@ Category section Navigation
 }
 
 .side-social-count > a {
-  font-family: "Roboto", sans-serif-Medium;
+  font-family: "Manjari", sans-serif;
   font-size: 12px;
   line-height: 1.5;
   color: #333;
@@ -358,12 +358,11 @@ Category section Navigation
 }
 
 .category-nav-ctn h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.333333;
+  font-family: "Manjari", sans-serif;
+  font-size: 20px;
   color: #e71d69;
   padding-right: 24px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .category-nav-ctn > ul {
@@ -405,11 +404,10 @@ Category section Navigation
 }
 
 .category-large-itm h5 > a {
-  font-family: "Noto Sans Malayalam", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  color: #303030;
+  font-family: "Manjari", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  color: #2c2c31;
 }
 
 .category-small-itm-ctn {
@@ -442,7 +440,7 @@ Category section Navigation
 }
 
 .category-small-itm h5 > a {
-  font-family: "Noto Sans Malayalam", sans-serif;
+  font-family: "Manjari", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -536,15 +534,13 @@ Category section Navigation
 }
 
 .c-h-d-category {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.7;
-  color: #888;
+  font-family: "Manjari", sans-serif;
+  font-size: 14px;
+  color: #727272;
 }
 
 .c-h-d-hyphen {
-  font-family: "Roboto", sans-serif-Regular;
+  font-family: "Manjari", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
@@ -552,7 +548,7 @@ Category section Navigation
 }
 
 .c-h-d-date {
-  font-family: "Roboto", sans-serif-Regular;
+  font-family: "Manjari", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
@@ -608,7 +604,7 @@ section.latest {
 }
 
 .latest-main-head > h3 {
-  font-family: Roboto-Medium;
+  font-family: "Manjari", sans-serif;
   font-size: 18px;
   line-height: 1.333333;
   color: #333;
@@ -650,7 +646,7 @@ section.latest {
 
 .latest-item-box h5 {
   padding-bottom: 5px;
-  font-family: "Noto Sans Malayalam", sans-serif;
+  font-family: "Manjari", sans-serif;
 }
 
 .latest-side-ctn {

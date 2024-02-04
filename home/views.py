@@ -19,12 +19,23 @@ def heading_latest(request):
      random_category = [categories[i] for i in random_indices]
 
      # category for main page
-     history_id = writing.objects.filter(category="Article").order_by('-id').values_list('id', flat=True)
-     history_heading = writing.objects.filter(category="Article").order_by('-id').values_list('heading', flat=True)
-     history_image = writing.objects.filter(category="Article").order_by('-id').values_list('image', flat=True)
-     history_sub_category = writing.objects.filter(category="Article").order_by('-id').values_list('sub_category', flat=True)
-     history_publishing_date = writing.objects.filter(category="Article").order_by('-id').values_list('publishing_date', flat=True)
+     article_religion_id = writing.objects.filter(category="Article", sub_category="Religion").order_by('-id').values_list('id', flat=True)
+     article_religion_heading = writing.objects.filter(category="Article", sub_category="Religion" ).order_by('-id').values_list('heading', flat=True)
+     article_religion_image = writing.objects.filter(category="Article", sub_category="Religion").order_by('-id').values_list('image', flat=True)
+     article_religion_sub_category = writing.objects.filter(category="Article", sub_category="Religion").order_by('-id').values_list('sub_category', flat=True)
+     article_religion_publishing_date = writing.objects.filter(category="Article", sub_category="Religion").order_by('-id').values_list('publishing_date', flat=True)
 
+     article_culture_id = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('id', flat=True)
+     article_culture_heading = writing.objects.filter(category="Article", sub_category="Culture" ).order_by('-id').values_list('heading', flat=True)
+     article_culture_image = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('image', flat=True)
+     article_culture_sub_category = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('sub_category', flat=True)
+     article_culture_publishing_date = writing.objects.filter(category="Article", sub_category="Culture").order_by('-id').values_list('publishing_date', flat=True)
+
+     article_society_id = writing.objects.filter(category="Article", sub_category="society").order_by('-id').values_list('id', flat=True)
+     article_society_heading = writing.objects.filter(category="Article", sub_category="society" ).order_by('-id').values_list('heading', flat=True)
+     article_society_image = writing.objects.filter(category="Article", sub_category="society").order_by('-id').values_list('image', flat=True)
+     article_society_sub_category = writing.objects.filter(category="Article", sub_category="society").order_by('-id').values_list('sub_category', flat=True)
+     article_society_publishing_date = writing.objects.filter(category="Article", sub_category="society").order_by('-id').values_list('publishing_date', flat=True)
 
      template = loader.get_template('home.html')
      context = {
@@ -32,11 +43,21 @@ def heading_latest(request):
           'latest_image': latest_image,
           'latest_id': latest_id,
           'random_heading': random_heading,
-          'history_id': history_id,
-          'history_heading': history_heading,
-          'history_image' : history_image,
-          'history_sub_category' : history_sub_category,
-          'history_publishing_date' : history_publishing_date,
+          'article_religion_id': article_religion_id,
+          'article_religion_heading': article_religion_heading,
+          'article_religion_image' : article_religion_image,
+          'article_religion_sub_category' : article_religion_sub_category,
+          'article_religion_publishing_date' : article_religion_publishing_date,
+          'article_culture_id': article_culture_id,
+          'article_culture_heading': article_culture_heading,
+          'article_culture_image' : article_culture_image,
+          'article_culture_sub_category' : article_culture_sub_category,
+          'article_culture_publishing_date' : article_culture_publishing_date,
+          'article_society_id': article_society_id,
+          'article_society_heading': article_society_heading,
+          'article_society_image' : article_society_image,
+          'article_society_sub_category' : article_society_sub_category,
+          'article_society_publishing_date' : article_society_publishing_date,
      }
      return HttpResponse(template.render(context, request))
 
