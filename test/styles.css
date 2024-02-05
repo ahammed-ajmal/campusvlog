@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  overflow: hidden;
+  background-color: #333;
+  padding: 10px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-item {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  background-color: #555;
+}

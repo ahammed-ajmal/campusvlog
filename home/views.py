@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 from django.template import loader
 from .models import writing
 import random
@@ -56,7 +57,7 @@ def heading_latest(request):
      review_movie_publishing_date = writing.objects.filter(category="Review", sub_category="Movie").order_by('-id').values_list('publishing_date', flat=True)
 
 
-     template = loader.get_template('home.html')
+     # template = loader.get_template('home.html')
      context = {
           'latest_heading': latest_heading,
           'latest_image': latest_image,
@@ -93,7 +94,10 @@ def heading_latest(request):
           'review_movie_sub_category' : review_movie_sub_category,
           'review_movie_publishing_date' : review_movie_publishing_date,
      }
-     return HttpResponse(template.render(context, request))
+     # return HttpResponse(template.render(context, request))
+     return render(request, ['home.html', 'master.html'], context)
+
+
 
 def single_writing(request, id):
      single_write = writing.objects.get(id=id)

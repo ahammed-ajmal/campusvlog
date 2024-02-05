@@ -109,4 +109,13 @@
   .category-small-itm > div {
     width: 100%;
   }
+  .category-nav-ctn > ul {
+    max-width: 200px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
 }
