@@ -8,6 +8,7 @@ section.single_writing {
   justify-content: center !important;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 120px;
 }
 
 .single_writing_main_ctn {
@@ -34,7 +35,7 @@ section.single_writing {
 
 .single_writing_content_ctn > div > h3 {
   font-family: "Manjari", sans-serif;
-  font-size: 6vw;
+  font-size: 26px;
   line-height: 1.3;
   color: #222;
   padding-bottom: 16px;
@@ -45,6 +46,9 @@ section.single_writing {
 .single_writing_content_ctn p {
   text-align: justify;
   margin-bottom: 16px;
+  color: #000000b1;
+  word-wrap: break-word;
+  text-indent: 3em;
 }
 
 .single_writing_writer_date {
@@ -162,4 +166,12 @@ div.single_writing_img {
   .single_writing_content_ctn > div {
     padding: 0 18px 18px 18px;
   }
+  .single_writing_ctn {
+    margin: 0 0;
+  }
+  .single_writing_content_ctn > div > h3 {
+    font-size: 6vw;
+  }
+  .single_writing_content_ctn p {
+    font-size: 14px;
 }

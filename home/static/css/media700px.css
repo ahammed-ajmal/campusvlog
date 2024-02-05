@@ -117,5 +117,9 @@
     flex-wrap: nowrap;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    width: 28vw;
+  }
+  .category-nav-ctn h3 {
+    font-size: 14px;
   }
 }
