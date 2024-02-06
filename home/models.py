@@ -23,7 +23,6 @@ class writing(models.Model):
     ('Documentary','Documentary'),
     ('Family','Family'),
     ('Fiqh','Fiqh'),
-    ('Women and Gender', 'Women and Gender'),
     ('Hadees','Hadees'),
     ('History and Culture','History and Culture'),
     ('International','International'),
@@ -39,6 +38,7 @@ class writing(models.Model):
     ('Society','Society'),
     ('Story','Story'),
     ('Translation','Translation'),
+    ('Women and Gender', 'Women and Gender'),
   ]
 
 
