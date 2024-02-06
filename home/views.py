@@ -93,6 +93,25 @@ article_international_image = writing.objects.filter(category="Article", sub_cat
 article_international_sub_category = writing.objects.filter(category="Article", sub_category="International").order_by('-writer_id').values_list('sub_category', flat=True)
 article_international_publishing_date = writing.objects.filter(category="Article", sub_category="International").order_by('-writer_id').values_list('publishing_date', flat=True)
 
+# review - book
+review_book_id = writing.objects.filter(category="Review", sub_category="Book").order_by('-writer_id').values_list('writer_id', flat=True)
+review_book_heading = writing.objects.filter(category="Review", sub_category="Book" ).order_by('-writer_id').values_list('heading', flat=True)
+review_book_image = writing.objects.filter(category="Review", sub_category="Book").order_by('-writer_id').values_list('image', flat=True)
+review_book_sub_category = writing.objects.filter(category="Review", sub_category="Book").order_by('-writer_id').values_list('sub_category', flat=True)
+review_book_publishing_date = writing.objects.filter(category="Review", sub_category="Book").order_by('-writer_id').values_list('publishing_date', flat=True)
+# review - documentary
+review_documentary_id = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('writer_id', flat=True)
+review_documentary_heading = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('heading', flat=True)
+review_documentary_image = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('image', flat=True)
+review_documentary_sub_category = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('sub_category', flat=True)
+review_documentary_publishing_date = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('publishing_date', flat=True)
+# review - movie
+review_movie_id = writing.objects.filter(category="Review", sub_category="Movie").order_by('-writer_id').values_list('writer_id', flat=True)
+review_movie_heading = writing.objects.filter(category="Review", sub_category="Movie" ).order_by('-writer_id').values_list('heading', flat=True)
+review_movie_image = writing.objects.filter(category="Review", sub_category="Movie").order_by('-writer_id').values_list('image', flat=True)
+review_movie_sub_category = writing.objects.filter(category="Review", sub_category="Movie").order_by('-writer_id').values_list('sub_category', flat=True)
+review_movie_publishing_date = writing.objects.filter(category="Review", sub_category="Movie").order_by('-writer_id').values_list('publishing_date', flat=True)
+
 # article - history and culture
 achange_id = writing.objects.filter(category="bchange", sub_category="cchange").order_by('-writer_id').values_list('writer_id', flat=True)
 achange_heading = writing.objects.filter(category="bchange", sub_category="cchange" ).order_by('-writer_id').values_list('heading', flat=True)
@@ -102,25 +121,6 @@ achange_publishing_date = writing.objects.filter(category="bchange", sub_categor
 
 
 
-review_book_id = writing.objects.filter(category="Review", sub_category="Book").order_by('-writer_id').values_list('writer_id', flat=True)
-review_book_heading = writing.objects.filter(category="Review", sub_category="Book" ).order_by('-writer_id').values_list('heading', flat=True)
-review_book_image = writing.objects.filter(category="Review", sub_category="Book").order_by('-writer_id').values_list('image', flat=True)
-review_book_sub_category = writing.objects.filter(category="Review", sub_category="Book").order_by('-writer_id').values_list('sub_category', flat=True)
-review_book_publishing_date = writing.objects.filter(category="Review", sub_category="Book").order_by('-writer_id').values_list('publishing_date', flat=True)
-
-review_documentary_id = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('writer_id', flat=True)
-review_documentary_heading = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('heading', flat=True)
-review_documentary_image = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('image', flat=True)
-review_documentary_sub_category = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('sub_category', flat=True)
-review_documentary_publishing_date = writing.objects.filter(category="Review", sub_category="Documentary").order_by('-writer_id').values_list('publishing_date', flat=True)
-
-review_movie_id = writing.objects.filter(category="Review", sub_category="Movie").order_by('-writer_id').values_list('writer_id', flat=True)
-review_movie_heading = writing.objects.filter(category="Review", sub_category="Movie" ).order_by('-writer_id').values_list('heading', flat=True)
-review_movie_image = writing.objects.filter(category="Review", sub_category="Movie").order_by('-writer_id').values_list('image', flat=True)
-review_movie_sub_category = writing.objects.filter(category="Review", sub_category="Movie").order_by('-writer_id').values_list('sub_category', flat=True)
-review_movie_publishing_date = writing.objects.filter(category="Review", sub_category="Movie").order_by('-writer_id').values_list('publishing_date', flat=True)
-
-
 
 def heading_latest(request):
      context = {
@@ -128,6 +128,66 @@ def heading_latest(request):
           'latest_image': latest_image,
           'latest_id': latest_id,
           'random_heading': random_heading,
+          'islamic_quran_id' : islamic_quran_id,
+          'islamic_quran_heading' : islamic_quran_heading,
+          'islamic_quran_image' : islamic_quran_image,
+          'islamic_quran_sub_category' : islamic_quran_sub_category,
+          'islamic_quran_publishing_date' : islamic_quran_publishing_date,
+          'islamic_hadees_id' : islamic_hadees_id,
+          'islamic_hadees_heading' : islamic_hadees_heading,
+          'islamic_hadees_image' : islamic_hadees_image,
+          'islamic_hadees_sub_category' : islamic_hadees_sub_category,
+          'islamic_hadees_publishing_date' : islamic_hadees_publishing_date,
+          'islamic_theology_id' : islamic_theology_id,
+          'islamic_theology_heading' : islamic_theology_heading,
+          'islamic_theology_image' : islamic_theology_image,
+          'islamic_theology_sub_category' : islamic_theology_sub_category,
+          'islamic_theology_publishing_date' : islamic_theology_publishing_date,
+          'islamic_fiqh_id' : islamic_fiqh_id,
+          'islamic_fiqh_heading' : islamic_fiqh_heading,
+          'islamic_fiqh_image' : islamic_fiqh_image,
+          'islamic_fiqh_sub_category' : islamic_fiqh_sub_category,
+          'islamic_fiqh_publishing_date' : islamic_fiqh_publishing_date,
+          'islamic_family_id' : islamic_family_id,
+          'islamic_family_heading' : islamic_family_heading,
+          'islamic_family_image' : islamic_family_image,
+          'islamic_family_sub_category' : islamic_family_sub_category,
+          'islamic_family_publishing_date' : islamic_family_publishing_date,
+          'article_history_and_culture_id' : article_history_and_culture_id,
+          'article_history_and_culture_heading' : article_history_and_culture_heading,
+          'article_history_and_culture_image' : article_history_and_culture_image,
+          'article_history_and_culture_sub_category' : article_history_and_culture_sub_category,
+          'article_history_and_culture_publishing_date' : article_history_and_culture_publishing_date,
+          'article_language_and_literature_id' : article_language_and_literature_id,
+          'article_language_and_literature_heading' : article_language_and_literature_heading,
+          'article_language_and_literature_image' : article_language_and_literature_image,
+          'article_language_and_literature_sub_category' : article_language_and_literature_sub_category,
+          'article_language_and_literature_publishing_date' : article_language_and_literature_publishing_date,
+          'article_women_and_gender_id' : article_women_and_gender_id,
+          'article_women_and_gender_heading' : article_women_and_gender_heading,
+          'article_women_and_gender_image' : article_women_and_gender_image,
+          'article_women_and_gender_sub_category' : article_women_and_gender_sub_category,
+          'article_women_and_gender_publishing_date' : article_women_and_gender_publishing_date,
+          'article_malabar_id' : article_malabar_id,
+          'article_malabar_heading' : article_malabar_heading,
+          'article_malabar_image' : article_malabar_image,
+          'article_malabar_sub_category' : article_malabar_sub_category,
+          'article_malabar_publishing_date' : article_malabar_publishing_date,
+          'article_art_and_aesthetic_id' : article_art_and_aesthetic_id,
+          'article_art_and_aesthetic_heading' : article_art_and_aesthetic_heading,
+          'article_art_and_aesthetic_image' : article_art_and_aesthetic_image,
+          'article_art_and_aesthetic_sub_category' : article_art_and_aesthetic_sub_category,
+          'article_art_and_aesthetic_publishing_date' : article_art_and_aesthetic_publishing_date,
+          'article_politics_id' : article_politics_id,
+          'article_politics_heading' : article_politics_heading,
+          'article_politics_image' : article_politics_image,
+          'article_politics_sub_category' : article_politics_sub_category,
+          'article_politics_publishing_date' : article_politics_publishing_date,
+          'article_international_id' : article_international_id,
+          'article_international_heading' : article_international_heading,
+          'article_international_image' : article_international_image,
+          'article_international_sub_category' : article_international_sub_category,
+          'article_international_publishing_date' : article_international_publishing_date,
           'review_book_id': review_book_id,
           'review_book_heading': review_book_heading,
           'review_book_image' : review_book_image,
