@@ -29,8 +29,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   max-width: 1080px;
-  padding-right: 15px;
-  padding-left: 15px;
+
   width: 100%;
 }
 
@@ -116,6 +115,7 @@ img {
   font-weight: 400;
   font-size: 42px;
   color: rgb(186 186 146);
+  margin: 0px 22px;
 }
 .main-head span {
   font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -125,6 +125,18 @@ img {
 }
 
 /* --Main heading, H1, Ends-- */
+
+/* navigation button styles start */
+span.nav-show-btn {
+  position: absolute;
+  right: 38px;
+  top: 82px;
+  font-size: 42px;
+  color: #323232;
+  cursor: pointer;
+}
+
+/* navigation button styles end */
 
 /* --Navigation Styles Starts-- */
 nav::before {

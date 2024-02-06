@@ -48,7 +48,7 @@
     display: none;
   }
   .single_writing_main_ctn {
-    min-width: 400px;
+    min-width: 220px;
   }
 
   .category-itm-ctn {
@@ -108,5 +108,18 @@
   }
   .category-small-itm > div {
     width: 100%;
+  }
+  .category-nav-ctn > ul {
+    max-width: 200px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 28vw;
+  }
+  .category-nav-ctn h3 {
+    font-size: 14px;
   }
 }

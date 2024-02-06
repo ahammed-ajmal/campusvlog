@@ -13,26 +13,32 @@ class writing(models.Model):
     ('Essay', 'Essay'),
     ('Fiction', 'Fiction'),
     ('Interview', 'Interview'),
+    ('Islamic Studies', 'Islamic Studies'),
     ('News', 'News'),
     ('Review', 'Review'),
   ]
   sub_categories = [
+    ('Art and Aesthetics','Art and Aesthetics'),
     ('Book','Book'),
-    ('Culture','Culture'),
     ('Documentary','Documentary'),
-    ('Gender Studies', 'Gender Studies'),
-    ('History','History'),
+    ('Family','Family'),
+    ('Fiqh','Fiqh'),
+    ('Women and Gender', 'Women and Gender'),
+    ('Hadees','Hadees'),
+    ('History and Culture','History and Culture'),
     ('International','International'),
-    ('Literature','Literature'),
+    ('Language and Literature','Language and Literature'),
     ('Malabar','Malabar'),
+    ('Movie','Movie'),
     ('National','National'),
     ('Novel','Novel'),
-    ('Philosophy','Philosophy'),
+    ('Theology and Philosophy','Theology and Philosophy'),
     ('Politics','Politics'),
+    ('Quran','Quran'),
     ('Religion','Religion'),
     ('Society','Society'),
     ('Story','Story'),
-    ('Theology','Theology'),
+    ('Translation','Translation'),
   ]
 
 
@@ -40,7 +46,7 @@ class writing(models.Model):
   heading = models.CharField(max_length=255)
   body = models.TextField()
   image = models.ImageField(upload_to="images/", height_field=None, width_field=None, max_length=100)
-  category = models.CharField(default='', max_length=10, choices=categories)
+  category = models.CharField(default='', max_length=20, choices=categories)
   sub_category = models.CharField(default='', max_length=25, choices=sub_categories)
   language = models.CharField(max_length=2, choices=languages)
   publishing_date = models.DateField()
