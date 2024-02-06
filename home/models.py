@@ -14,8 +14,8 @@ class writing(models.Model):
     ('Fiction', 'Fiction'),
     ('Interview', 'Interview'),
     ('Islamic Studies', 'Islamic Studies'),
-    ('News', 'News'),
     ('Review', 'Review'),
+    ('Series', 'Series'),
   ]
   sub_categories = [
     ('Art and Aesthetics','Art and Aesthetics'),
@@ -34,7 +34,10 @@ class writing(models.Model):
     ('Theology and Philosophy','Theology and Philosophy'),
     ('Politics','Politics'),
     ('Quran','Quran'),
-    ('Religion','Religion'),
+    ('Series 1','Series 1'),
+    ('Series 2','Series 2'),
+    ('Series 3','Series 3'),
+    ('Series 4','Series 4'),
     ('Society','Society'),
     ('Story','Story'),
     ('Translation','Translation'),
