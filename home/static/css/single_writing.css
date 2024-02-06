@@ -51,6 +51,13 @@ section.single_writing {
   text-indent: 3em;
 }
 
+
+.single_writing_content_ctn h3{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 22px 0 12px 0;
+}
+
 .single_writing_writer_date {
   align-items: flex-start;
   justify-content: flex-start;

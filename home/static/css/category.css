@@ -1,0 +1,16 @@
+.category-box-ctn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.category-box {
+  width: 200px;
+  border: 1px solid;
+}
+
+.category-box-ctn img {
+  width: 200px;
+}

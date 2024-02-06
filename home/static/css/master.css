@@ -126,6 +126,18 @@ img {
 
 /* --Main heading, H1, Ends-- */
 
+/* navigation button styles start */
+span.nav-show-btn {
+  position: absolute;
+  right: 38px;
+  top: 82px;
+  font-size: 42px;
+  color: #323232;
+  cursor: pointer;
+}
+
+/* navigation button styles end */
+
 /* --Navigation Styles Starts-- */
 nav::before {
   transform: scaleX(1);

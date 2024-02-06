@@ -1,0 +1,23 @@
+{% extends "master.html" %}
+{% load static %}
+{% block content %}
+    <section class="category">
+    <div class="ctn">
+        <div class="category-box-ctn">
+           
+           
+             {% for x in all_content %}
+            <div class="category-box">
+               
+                <img src="{{ x.image }}" alt="{{ x.heading }}">
+                <div>
+                    <h3>{{ x.heading }}</h3>
+                    <span>{{ x.publishing_date }}</span>
+                </div>
+            </div>
+            {% endfor %} 
+
+        </div>
+    </div>
+    </section>
+{% endblock content %}
