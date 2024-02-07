@@ -111,7 +111,7 @@ img {
   padding: 24px 0 24px 0;
 }
 
-.main-head > img{
+.main-head > a > img{
   width: 220px;
   margin: 6px 0 6px 42px;
 }
