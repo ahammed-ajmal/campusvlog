@@ -70,12 +70,12 @@
               aria-labelledby="category-1-1-tab" tabindex="0">
               <div class="category-itm-ctn">
                 <div class="category-large-itm">
-                  <a class="category-img-link" href="">
+                  <a class="category-img-link" href="article/{{ article_history_and_culture_id.0 }}">
                     <img src="{{ article_history_and_culture_image.0 }}" alt="">
                   </a>
                   <div>
                     <h5>
-                      <a href="">{{ article_history_and_culture_heading.0 }}</a>
+                      <a href="article/{{ article_history_and_culture_id.0 }}">{{ article_history_and_culture_heading.0 }}</a>
                     </h5>
                     <span class="c-h-d">
                       <a href="" class="c-h-d-category"></a>
@@ -86,12 +86,12 @@
                 </div>
                 <div class="category-small-itm-ctn">
                   <div class="category-small-itm">
-                    <a class="category-img-link" href="">
+                    <a class="category-img-link" href="article/{{ article_history_and_culture_id.1 }}">
                       <img src="{{ article_history_and_culture_image.1 }}" alt="">
                     </a>
                     <div>
                       <h5>
-                        <a href="">{{ article_history_and_culture_heading.1 }}</a>
+                        <a href="article/{{ article_history_and_culture_id.1 }}">{{ article_history_and_culture_heading.1 }}</a>
                       </h5>
                       <span class="c-h-d">
                         <a href="" class="c-h-d-category"></a>
@@ -742,31 +742,31 @@
           <ul class="popular-items">
             <li class="popular-items-li">
               <div>1</div>
-              <a href="">Lorem ipsum, dolm, dolor</a>
+              <a href="article/{{ latest_id.0 }}">{{ latest_heading.0 }}</a>
             </li>
             <li class="popular-items-li">
-              <div>1</div>
-              <a href="">Lorem ipsum, dolm, dolor</a>
+              <div>2</div>
+              <a href="article/{{ latest_id.1 }}">{{ latest_heading.1 }}</a>
             </li>
             <li class="popular-items-li">
-              <div>1</div>
-              <a href="">Lorem ipsum, dolm, dolor</a>
+              <div>3</div>
+              <a href="article/{{ latest_id.2 }}">{{ latest_heading.2 }}</a>
             </li>
             <li class="popular-items-li">
-              <div>1</div>
-              <a href="">Lorem ipsum, dolm, dolor</a>
+              <div>4</div>
+              <a href="article/{{ latest_id.3 }}">{{ latest_heading.3 }}</a>
             </li>
             <li class="popular-items-li">
-              <div>1</div>
-              <a href="">Lorem ipsum, dolm, dolor</a>
+              <div>5</div>
+              <a href="article/{{ latest_id.4 }}">{{ latest_heading.4 }}</a>
             </li>
           </ul>
         </div>
-        <div class="side-ads">
+        {% comment %} <div class="side-ads">
           <a href="">
             <img class="side-ads-img" src="{% static 'img/A.jpg' %}" alt="">
           </a>
-        </div>
+        </div> {% endcomment %}
         <div class="side-social-ctn">
           <div class="side-social-head">
             <h3>Social</h3>

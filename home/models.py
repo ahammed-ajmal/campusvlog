@@ -45,6 +45,12 @@ class writing(models.Model):
   ]
 
 
+  article_active =[
+    ('Yes','Yes'),
+    ('No','No'),
+  ]
+
+  article_active = sub_category = models.CharField(default='Yes', max_length=3, choices=article_active)
   writer_id = models.IntegerField()
   heading = models.CharField(max_length=255)
   body = models.TextField()
