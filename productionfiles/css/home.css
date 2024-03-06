@@ -130,6 +130,12 @@ section.bg-img {
   height: 194px;
 }
 
+.bg-img-3 h2,
+.bg-img-4 h2{
+  font-size: 16px;
+  line-height: 16px;
+}
+
 /* Category styles start her 
 Category section Navigation
  */
@@ -228,6 +234,11 @@ Category section Navigation
   font-size: 15px;
   line-height: 1.466667;
   color: #333;
+}
+
+.popular-items-li > a:hover{
+  text-decoration: underline;
+  color: #232323;
 }
 
 /* Advertisement section in side category */
@@ -438,8 +449,8 @@ Category section Navigation
 
 .category-small-itm h5 > a {
   font-family: "Manjari", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 14px;
   line-height: 24px;
   color: #303030;
 }
