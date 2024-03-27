@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 # Create your models here.
 class writing(models.Model):
@@ -58,7 +59,7 @@ class writing(models.Model):
   article_active = sub_category = models.CharField(default='Yes', max_length=3, choices=article_active)
   writer_id = models.IntegerField()
   heading = models.CharField(max_length=255)
-  body = models.TextField()
+  body = HTMLField()
   image = models.ImageField(upload_to="images/", height_field=None, width_field=None, max_length=100)
   category = models.CharField(default='', max_length=20, choices=categories)
   sub_category = models.CharField(default='', max_length=25, choices=sub_categories)
