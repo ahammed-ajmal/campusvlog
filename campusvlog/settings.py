@@ -24,8 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-h028op^e#2^i)_oac#-z8+hb+mfyoe+)pesizz1-eu#=g%c&93"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ALLOWED_HOSTS = ['*']
+DEBUG = False
+ALLOWED_HOSTS = ['thecampusjournal.in']
 
 
 # Application definition
