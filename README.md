@@ -63,7 +63,7 @@ campusvlog/
 
 ```bash
 git clone https://github.com/ahammed-ajmal/campusvlog.git 
-cd campusvlog-publishing-platform
+cd campusvlog
 ```
 
 ### Create Virtual Environment
