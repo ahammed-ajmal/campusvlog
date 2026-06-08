@@ -62,7 +62,7 @@ campusvlog/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/ahammed-ajmal/campusvlog-publishing-platform.git
+git clone https://github.com/ahammed-ajmal/campusvlog.git 
 cd campusvlog-publishing-platform
 ```
 
